@@ -60,11 +60,14 @@ namespace IngameScript
 
 		public Program()
 		{
-			pbSurface = Me.GetSurface(0);
-			pbSM = new SurfaceMath(pbSurface);
-			pbSurface.ContentType = ContentType.SCRIPT;
-			pbSurface.Script = "";
-			if (pbSurface.ScriptBackgroundColor != problemBG) defaultBG = pbSurface.ScriptBackgroundColor;
+			if(Me.SurfaceCount > 0)
+			{
+				pbSurface = Me.GetSurface(0);
+				pbSM = new SurfaceMath(pbSurface);
+				pbSurface.ContentType = ContentType.SCRIPT;
+				pbSurface.Script = "";
+				if (pbSurface.ScriptBackgroundColor != problemBG) defaultBG = pbSurface.ScriptBackgroundColor;
+			}
 
 			InitPreloads();
 
@@ -464,6 +467,7 @@ namespace IngameScript
 		int heartBeatIndex = 0;
 		void DrawOutsidePBLcd()
 		{
+			if (pbSurface == null) return;
 			using (var frame = pbSurface.DrawFrame())
 			{
 				Vector2 headerPos = new Vector2(pbSM.Center.X, pbSM.Center.Y - pbSM.Size.Y * 0.333f);

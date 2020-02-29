@@ -20,7 +20,7 @@ namespace IngameScript
 {
 	#region untouched
 	/*
-	Blargmode's Fancy Flight Info (FFI) (V4.0.3, 2019-05-09)
+	Blargmode's Fancy Flight Info (FFI) (V4.0.4, 2020-02-29)
 
 	This script gives you free hands in creating a fancy cockpit with data about your ship. 
 	When this project started, I intended to replace the awful hud, then the hud got better. Now it's mostly for looks. 
@@ -38,9 +38,9 @@ namespace IngameScript
 
 	This place is not good for describing this. Go to the workshop for detailed info. 
 
-	Setup guide: https://steamcommunity.com/sharedfiles/filedetails/?id=907697156
+	Setup guide: http://blargmode.se/ffi-guide/
 
-	If you refuse or can't visit the workshop/watch the setup video, there is a way.
+	If you can't visit the guide, there is a way.
 	You can figure out a whole lot in-game as well if you're a bit crafty. Start by loading a preload like this:
 	1. Type the following 3 lines in Custom Data of a block with screens, e.g. an LCD panel.
 	   [FFI 1]
