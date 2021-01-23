@@ -20,7 +20,7 @@ namespace IngameScript
 {
 	#region untouched
 	/*
-	Blargmode's Fancy Flight Info (FFI) (V4.0.4, 2020-02-29)
+	Blargmode's Fancy Flight Info (FFI) (V4.0.5, 2021-01-23)
 
 	This script gives you free hands in creating a fancy cockpit with data about your ship. 
 	When this project started, I intended to replace the awful hud, then the hud got better. Now it's mostly for looks. 

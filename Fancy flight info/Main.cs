@@ -184,7 +184,7 @@ namespace IngameScript
 			
 
 			var sprites = new List<string>();
-			
+
 			foreach (var block in blocks)
 			{
 				if (block is IMyShipController)
@@ -204,7 +204,10 @@ namespace IngameScript
 						}
 					}
 				}
+			}
 
+			foreach (var block in blocks)
+			{
 				var surfaceProvider = block as IMyTextSurfaceProvider;
 				if (surfaceProvider != null && surfaceProvider.SurfaceCount > 0)
 				{
